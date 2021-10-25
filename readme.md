@@ -1,7 +1,24 @@
 ## [Video](https://drive.google.com/drive/u/1/folders/1awGYqGV_5hWIoVv1vNOF4-kRdxzHxZOe?fbclid=IwAR11ad05Ecp6A2AnpCRYWFspzNdUBTHvQbV9xpSIRWxhRZE6F1sttR5NC1I)
-## [Nội dung các tuần](https://drive.google.com/drive/u/1/folders/1JJwqWC6EleRNKuATofdjEKSIjEiy3iF5?fbclid=IwAR2u54f6pQVvyxwTa4wJeakeqZPQfrEdAxA058Zu_eAsTQAgKxoVucr99No)
+## [Nội dung các tuần của thầy](https://drive.google.com/drive/u/1/folders/1JJwqWC6EleRNKuATofdjEKSIjEiy3iF5?fbclid=IwAR2u54f6pQVvyxwTa4wJeakeqZPQfrEdAxA058Zu_eAsTQAgKxoVucr99No)
+## [Drive làm việc nhóm](https://drive.google.com/drive/folders/1BUWctrc0WJH_nWLLlUhdlkYShLVwuAOe?usp=sharing)
 
 # Week 2
+
+**[Video buổi họp tuần 2](https://drive.google.com/file/d/1JKutNBoCeaeKwpW9ne3T-aaO8tC5eBDG/view?usp=sharing)**
+
+**Thống nhất là toàn bộ data (ngoại trừ data tải về từ GEE) sẽ dùng hệ quy chiếu UTM**
+
+[Bảng hệ quy chiếu UTM và code của nó (cái này cho vui thôi, thêm vào báo cáo cũng hay)](https://resources.arcgis.com/en/help/main/10.1/018z/pdf/projected_coordinate_systems.pdf)
+
+### Các việc cần làm tuần 2
+- Cài đặt Python, gdal, numpy
+- Đọc file ảnh vệ tinh đã được tải về, đổi hệ quy chiếu sang UTM
+- Thống kê (max, min, median, mean, std) cho từng band
+- Tính toán các chỉ số NDVI, NDWI dựa trên 3 band Red (band 1), Green (band 4), NIR (band 2)
+- Xuất bản đồ NDVI, NDWI dưới dạng tif
+- Hiển thị bản đồ trên arcmap
+- [Phân chia công việc](https://docs.google.com/document/d/11A478eDmFSBcSOaOr3UuztbsetMSCNdmQ6gLidZrzT0/edit?usp=sharing)
+- [Viết báo cáo tuần 2](https://docs.google.com/document/d/1Hax6q1Zi0FItBQW4oXAlBR-U43D6-dYjsRP-I0aAarM/edit?usp=sharing)
 
 ### Hướng dẫn cài đặt python 3.10
 1. Vào [link](https://www.python.org/downloads/) và chọn **Download Python 3.10.0** để tải file cài đặt python về
@@ -29,18 +46,6 @@ https://pcjericks.github.io/py-gdalogr-cookbook/raster_layers.html
 
 ### Xử lý ảnh:
 Các ảnh tải xuống từ GEE đang dùng hệ quy chiếu cầu, cần chuyển sang hệ quy chiếu UTM. Cái này không cần code, sử dụng tool Project Raster trong ArcMap là được.
-
-#### **Thống nhất là toàn bộ data (ngoại trừ data tải về từ GEE) sẽ dùng hệ quy chiếu UTM**
-
-### Các việc cần làm tuần 2
-- Cài đặt Python, gdal, numpy
-- Đọc file ảnh vệ tinh đã được tải về, đổi hệ quy chiếu sang UTM
-- Thống kê (max, min, median, mean, std) cho từng band
-- Tính toán các chỉ số NDVI, NDWI dựa trên 3 band Red (band 1), Green (band 4), NIR (band 2)
-- Xuất bản đồ NDVI, NDWI dưới dạng tif
-- Hiển thị bản đồ trên arcmap
-- Phân chia công việc
-- Viết báo cáo tuần 2
 
 # Week 1
 - [Phân chia công việc tuần 1](https://docs.google.com/document/d/18LiRxJy1365zXZHxYvq2JjOhk1iDiqnwuc550IVhdoE/edit?usp=sharing)

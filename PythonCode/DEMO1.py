@@ -38,6 +38,6 @@ def array2raster(newRasterfn,rasterOrigin,pixelWidth,pixelHeight,array):
     outband = outRaster.GetRasterBand(1) # 1 ở đây là lấy dữ liệu từ band thứ 1
     outband.WriteArray(array)
     outRasterSRS = osr.SpatialReference() # Dòng này và 2 dưới dưới là để set hệ quy chiếu cho ảnh tif
-    outRasterSRS.ImportFromEPSG(4326) # 4326 là mã của chuẩn hệ quy chiếu cầu. Mình sẽ sử dụng hệ quy chiếu UTM
+    outRasterSRS.ImportFromEPSG(32648) # Cái này là mã khu vực mình chọn ở hệ quy chiếu UTM - WGS_1984_UTM_Zone_48N
     outRaster.SetProjection(outRasterSRS.ExportToWkt())
     outband.FlushCache()
