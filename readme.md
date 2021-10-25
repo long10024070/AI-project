@@ -15,7 +15,8 @@
    3. Không khuyến khích dùng các phiên bản khác nhằm mục đích đồng bộ
 3. Tại nơi tải về, mở cmd lên, nhập lệnh sau để cài đặt vào python:
 
-   python -m pip install GDAL
+
+      python -m pip install GDAL
 
 ### Để code được như code demo của thầy ở buổi 2
 Để sử dụng được hàm ReadAsArray(), phải cài đặt thêm numpy, gõ lệnh sau trong cmd hoặc terminal ở đâu cũng được:
