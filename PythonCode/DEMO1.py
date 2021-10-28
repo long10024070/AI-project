@@ -2,7 +2,7 @@ from osgeo import gdal, ogr, os, osr    # import mấy cái này là để dùng
 import numpy as np  # import cái này là để dùng gdal
 import shutil   # import cái này để xử lý file, không liên quan đến xử lý dữ liệu
 
-data_path = "../Data/MODIS_Aqua_2019_scale500.tif"
+data_path = "../Data/GEE_DATA/MODIS_Aqua_2019_scale500.tif"
 
 ds = gdal.Open(data_path, gdal.GA_ReadOnly)
 
