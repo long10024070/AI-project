@@ -3,8 +3,18 @@
 ## [Drive làm việc nhóm](https://drive.google.com/drive/folders/1BUWctrc0WJH_nWLLlUhdlkYShLVwuAOe?usp=sharing)
 
 # Week 3
-- Sửa lại báo cáo 01, 02
-- Sửa ảnh tif thành ảnh mới
+
+Thông tin trong các loại band trong map VLUCD
+1. Band 1, 2: đất ở (residential land)
+2. Band 3: đồng lúa (rice paddies)
+3. Band 4, 5, 6: đất trồng trọt (croplands)
+4. Band 7: đồng cỏ (grassland)
+5. Band 8: đất cằn cỗi (barren land)
+6. Band 9: bụi rậm (scrub/shrub)
+7. Band 10, 11, 12, 14, 20: rừng (forest)
+8. Band 15: vùng đất trũng, ẩm ướt (wetland)
+9. Band 18: vùng nước bỏ trống (open water)
+10. Band 19: vùng nuôi trồng thủy sản (aquaculture)
 
 # Week 2
 
