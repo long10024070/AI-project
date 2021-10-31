@@ -28,6 +28,20 @@
 9. water: 150
 10. aqua: 100
 
+### Các file shapefile để sử dụng trong GoogleEarth nằm ở thư mục DATA/GEarthSample
+1. resident: 199 (anh Long)
+2. rice1: 400 (anh Dương)
+3. rice2: 24 (anh Long)
+4. crop1: 400 (anh Khánh)
+5. crop2: 25 (anh Long)
+6. grass: 96 (Minh)
+7. barren: 86 (Minh)
+8. scrub: 75 (Minh)
+9. forest1: 400 (Lương Đạt)
+10. forest2: 45 (Minh)
+11. water: 150 (anh Long)
+12. aqua: 100 (Minh)
+
 # Week 2
 
 **[Video buổi họp tuần 2](https://drive.google.com/file/d/1JKutNBoCeaeKwpW9ne3T-aaO8tC5eBDG/view?usp=sharing)**
