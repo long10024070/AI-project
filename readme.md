@@ -4,17 +4,29 @@
 
 # Week 3
 
-Thông tin trong các loại band trong map VLUCD
-1. Band 1, 2: đất ở (residential land)
-2. Band 3: đồng lúa (rice paddies)
-3. Band 4, 5, 6: đất trồng trọt (croplands)
-4. Band 7: đồng cỏ (grassland)
-5. Band 8: đất cằn cỗi (barren land)
-6. Band 9: bụi rậm (scrub/shrub)
-7. Band 10, 11, 12, 14, 20: rừng (forest)
-8. Band 15: vùng đất trũng, ẩm ướt (wetland)
-9. Band 18: vùng nước bỏ trống (open water)
-10. Band 19: vùng nuôi trồng thủy sản (aquaculture)
+### Thông tin trong các loại band trong map VLUCD
+1. Phân lớp 1, 2: đất ở (residential land) - resident - OK
+2. Phân lớp 3: đồng lúa (rice paddies) - rice - OK
+3. Phân lớp 4, 5, 6: đất trồng trọt (croplands) - crop - OK
+4. Phân lớp 7: đồng cỏ (grassland) - grass - OK
+5. Phân lớp 8: đất cằn cỗi (barren land) - barren - OK
+6. Phân lớp 9: bụi rậm (scrub/shrub) - scrub - OK
+7. Phân lớp 10, 11, 12, 14, 20: rừng (forest) - forest - OK
+8. Phân lớp 15: vùng đất trũng, ẩm ướt (wetland) - wet - Không có cái nào
+9. Phân lớp 18: vùng nước bỏ trống (open water) - water - OK
+10. Phân lớp 19: vùng nước nuôi trồng thủy sản (aquaculture) - aqua - OK
+
+### Sử dụng 2000 mẫu, minval: 75
+1. resident: 199
+2. rice: 424
+3. crop: 425
+4. grass: 96
+5. barren: 86
+6. scrub: 75
+7. forest: 445
+8. wet: 0
+9. water: 150
+10. aqua: 100
 
 # Week 2
 
