@@ -5,20 +5,20 @@
 # Week 3
 
 ### Những việc cần làm
-- Tải ảnh bản đồ lớp phủ, cắt theo shapefile của ĐBSH, tách ra các phân lớp
-- Hợp nhất các polygon trong cùng phân lớp
-- Tính toán số điểm lấy mẫu và lấy mẫu ngẫu nhiên cho mỗi phân lớp
-- Hiển thị điểm ngẫu nhiên trên Google earth pro, kiểm tra xem điểm đã ở đúng vị trí được mô tả hay chưa, nếu chưa thì:
+- Tải ảnh bản đồ lớp phủ, cắt theo shapefile của ĐBSH, tách ra các phân lớp (em Long)
+- Hợp nhất các polygon trong cùng phân lớp (em Long)
+- Tính toán số điểm lấy mẫu và lấy mẫu ngẫu nhiên cho mỗi phân lớp (em Long)
+- Hiển thị điểm ngẫu nhiên trên Google earth pro (xem tiếp phía dưới sẽ có phần phân công từng file cho mỗi người), kiểm tra xem điểm đã ở đúng vị trí được mô tả hay chưa, nếu chưa thì: (các thành viên còn lại trong nhóm)
   - Kéo thả điểm vào đúng khu vực khớp với mô tả ở gần với nó **(đủ gần là khi mình zoom đến mức to nhất mà cái khu vực đó vẫn nhìn thấy được)**
   - Hoặc xóa nếu như không có khu vực khớp với mô tả ở gần **(cái này cực kỳ hạn chế)**
-- Xuất dữ liệu sau khi chỉnh sửa ra file .kmz
-- Chuyển file kmz thành file .tif bằng Arcmap
-- Chuyển hệ quy chiếu của file .tif sang hệ UTM 48N
-- Xuất dữ liệu các điểm trong file .tif ra excel (phải xuất được tọa độ, gán nhãn cho cho điểm (danh mục các nhãn ở dưới))
-- Tổng hợp các file excel
-- Tính toán các điểm nằm ở ô nào trong ma trận của từng band
-- Tính toán các chỉ số NDVI, NDWI cho từng điểm
-- Viết báo cáo
+- Xuất dữ liệu sau khi chỉnh sửa ra file .kmz (các thành viên còn lại trong nhóm)
+- Chuyển file kmz thành file .tif bằng Arcmap (các thành viên còn lại trong nhóm)
+- Chuyển hệ quy chiếu của file .tif sang hệ UTM 48N (các thành viên còn lại trong nhóm)
+- Xuất dữ liệu các điểm trong file .tif ra excel (phải xuất được tọa độ, gán nhãn cho cho điểm (danh mục các nhãn ở dưới)) (các thành viên còn lại trong nhóm)
+- Tổng hợp các file excel (em Long)
+- Tính toán các điểm nằm ở ô nào trong ma trận của từng band (em Long)
+- Tính toán các chỉ số NDVI, NDWI cho từng điểm (em Long)
+- Viết báo cáo (em Long)
 
 ### Thông tin trong các loại phân lớp trong map VLUCD - nhãn của các phân lớp là từ được viết sau dấu gạch ngang (-)
 1. Phân lớp 1, 2: đất ở (residential land) - resident
