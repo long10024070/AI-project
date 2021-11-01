@@ -19,6 +19,8 @@
 - Tính toán các điểm nằm ở ô nào trong ma trận của từng band (em Long)
 - Tính toán các chỉ số NDVI, NDWI cho từng điểm (em Long)
 - Viết báo cáo (em Long)
+- **Dead line việc của những thành viên còn lại trong nhóm (trừ em Long) đến 21h chiều thứ 5 (04/11/2021)**
+- **Nếu có khó khăn gì thì lập tức hỏi em**
 
 ### Thông tin trong các loại phân lớp trong map VLUCD - nhãn của các phân lớp là từ được viết sau dấu gạch ngang (-)
 1. Phân lớp 1, 2: đất ở (residential land) - resident
