@@ -4,17 +4,33 @@
 
 # Week 3
 
-### Thông tin trong các loại band trong map VLUCD
-1. Phân lớp 1, 2: đất ở (residential land) - resident - OK
-2. Phân lớp 3: đồng lúa (rice paddies) - rice - OK
-3. Phân lớp 4, 5, 6: đất trồng trọt (croplands) - crop - OK
-4. Phân lớp 7: đồng cỏ (grassland) - grass - OK
-5. Phân lớp 8: đất cằn cỗi (barren land) - barren - OK
-6. Phân lớp 9: bụi rậm (scrub/shrub) - scrub - OK
-7. Phân lớp 10, 11, 12, 14, 20: rừng (forest) - forest - OK
-8. Phân lớp 15: vùng đất trũng, ẩm ướt (wetland) - wet - Không có cái nào
-9. Phân lớp 18: vùng nước bỏ trống (open water) - water - OK
-10. Phân lớp 19: vùng nước nuôi trồng thủy sản (aquaculture) - aqua - OK
+### Những việc cần làm
+- Tải ảnh bản đồ lớp phủ, cắt theo shapefile của ĐBSH, tách ra các phân lớp
+- Hợp nhất các polygon trong cùng phân lớp
+- Tính toán số điểm lấy mẫu và lấy mẫu ngẫu nhiên cho mỗi phân lớp
+- Hiển thị điểm ngẫu nhiên trên Google earth pro, kiểm tra xem điểm đã ở đúng vị trí được mô tả hay chưa, nếu chưa thì:
+  - Kéo thả điểm vào đúng khu vực khớp với mô tả ở gần với nó **(đủ gần là khi mình zoom đến mức to nhất mà cái khu vực đó vẫn nhìn thấy được)**
+  - Hoặc xóa nếu như không có khu vực khớp với mô tả ở gần **(cái này cực kỳ hạn chế)**
+- Xuất dữ liệu sau khi chỉnh sửa ra file .kmz
+- Chuyển file kmz thành file .tif bằng Arcmap
+- Chuyển hệ quy chiếu của file .tif sang hệ UTM 48N
+- Xuất dữ liệu các điểm trong file .tif ra excel (phải xuất được tọa độ, gán nhãn cho cho điểm (danh mục các nhãn ở dưới))
+- Tổng hợp các file excel
+- Tính toán các điểm nằm ở ô nào trong ma trận của từng band
+- Tính toán các chỉ số NDVI, NDWI cho từng điểm
+- Viết báo cáo
+
+### Thông tin trong các loại phân lớp trong map VLUCD - nhãn của các phân lớp là từ được viết sau dấu gạch ngang (-)
+1. Phân lớp 1, 2: đất ở (residential land) - resident
+2. Phân lớp 3: đồng lúa (rice paddies) - rice
+3. Phân lớp 4, 5, 6: đất trồng trọt (croplands) - crop
+4. Phân lớp 7: đồng cỏ (grassland) - grass
+5. Phân lớp 8: đất cằn cỗi (barren land) - barren
+6. Phân lớp 9: bụi rậm (scrub/shrub) - scrub
+7. Phân lớp 10, 11, 12, 14, 20: rừng (forest) - forest
+8. Phân lớp 15: vùng đất trũng, ẩm ướt (wetland) - wet - cái này không cần quan tâm, do chả có pixel nào của nó trong bản đồ cả
+9. Phân lớp 18: vùng nước bỏ trống (open water) - water
+10. Phân lớp 19: vùng nước nuôi trồng thủy sản (aquaculture) - aqua
 
 ### Sử dụng 2000 mẫu, minval: 75
 1. resident: 199
