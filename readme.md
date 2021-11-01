@@ -9,8 +9,8 @@
 - Hợp nhất các polygon trong cùng phân lớp (em Long)
 - Tính toán số điểm lấy mẫu và lấy mẫu ngẫu nhiên cho mỗi phân lớp (em Long)
 - Hiển thị điểm ngẫu nhiên trên Google earth pro (xem tiếp phía dưới sẽ có phần phân công từng file cho mỗi người), kiểm tra xem điểm đã ở đúng vị trí được mô tả hay chưa, nếu chưa thì: (các thành viên còn lại trong nhóm)
-  - Kéo thả điểm vào đúng khu vực khớp với mô tả ở gần với nó **(đủ gần là khi mình zoom đến mức to nhất mà cái khu vực đó vẫn nhìn thấy được)**
-  - Hoặc xóa nếu như không có khu vực khớp với mô tả ở gần **(cái này cực kỳ hạn chế)**
+  - Kéo thả điểm vào đúng khu vực khớp với mô tả ở gần với nó **(cứ tìm xung quanh đó có vùng nào khớp với mô tả không)**
+  - Hoặc xóa nếu như không có khu vực khớp với mô tả ở gần **(cái này cực kỳ hạn chế, chỉ làm khi không tìm được)**
 - Xuất dữ liệu sau khi chỉnh sửa ra file .kmz (các thành viên còn lại trong nhóm)
 - Chuyển file kmz thành file .tif bằng Arcmap (các thành viên còn lại trong nhóm)
 - Chuyển hệ quy chiếu của file .tif sang hệ UTM 48N (các thành viên còn lại trong nhóm)
