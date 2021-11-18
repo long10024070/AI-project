@@ -14,6 +14,7 @@ import math
 
 data_path = "../Data/SampleData/#sample.txt"
 MIEN_BAC_data_path = "../Data/UTM/MDA_2019.tif"
+DEM_data_path = "../Data/UTM/DEM.tif"
 output_data_path = "../Data/SampleData/#sample_detail.csv"
 
 data = open(data_path, "r")
@@ -22,6 +23,7 @@ red = 0
 nir = 1
 green = 3
 blue = 2
+dem_map = gdal.Open(DEM_data_path, gdal.GA_ReadOnly)
 outfile = open(output_data_path, "w")
 
 mienbac_data = mienbac.ReadAsArray()
@@ -30,11 +32,20 @@ originX = mienbac_geoTrans[0]
 pixelWidth = mienbac_geoTrans[1]
 originY = mienbac_geoTrans[3]
 pixelHeight = mienbac_geoTrans[5]
+
+dem_data = dem_map.ReadAsArray()
+dem_geoTrans = dem_map.GetGeoTransform()
+dem_originX = dem_geoTrans[0]
+dem_pixelWidth = dem_geoTrans[1]
+dem_originY = dem_geoTrans[3]
+dem_pixelHeight = dem_geoTrans[5]
 # print(originX, originY, pixelWidth, pixelHeight)
+# print(mienbac_geoTrans, '\n', dem_map.GetGeoTransform())
+# exit(0)
 
 if (data.readable()):
     data.readline()
-    tableheader = "X, Y, label, Band_1, Band_2, Band_3, Band_4, Band_5, Band_6, Band_7, NDVI, NDWI, \n"
+    tableheader = "X, Y, label, Band_1, Band_2, Band_3, Band_4, Band_5, Band_6, Band_7, DEM, NDVI, NDWI, \n"
     outfile.write(tableheader)
     while (True):
         line = data.readline()
@@ -56,9 +67,10 @@ if (data.readable()):
         for i in range (len(mienbac_data)):
             # print(mienbac_data[i][row_id][col_id])
             tablerow += str(mienbac_data[i][row_id][col_id]) + ", "
+        DEM = dem_data[math.floor((y-dem_originY) / dem_pixelHeight)][math.floor((x-dem_originX) / dem_pixelWidth)]
         NDVI = (mienbac_data[nir][row_id][col_id] - mienbac_data[red][row_id][col_id]) / (mienbac_data[nir][row_id][col_id] + mienbac_data[red][row_id][col_id])
         NDWI = (mienbac_data[green][row_id][col_id] - mienbac_data[nir][row_id][col_id]) / (mienbac_data[green][row_id][col_id] + mienbac_data[nir][row_id][col_id])
-        tablerow += str(round(NDVI,3)) + ", " + str(round(NDWI,3)) + ", "
+        tablerow += str(DEM) + ", " + str(round(NDVI,3)) + ", " + str(round(NDWI,3)) + ", "
         tablerow += "\n"
         # print(tablerow)
         outfile.write(tablerow)
