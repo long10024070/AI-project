@@ -1,0 +1,4 @@
+data frame size: 1978
+X_train size: 1780 | X_test size: 198 | y_train size: 1780 | y_test size: 198
+--------------------------------------------------------------------------------
+Accuracy score - Test dataset: 0.41919191919191917
