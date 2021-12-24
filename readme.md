@@ -2,7 +2,20 @@
 ## [Nội dung các tuần của thầy](https://drive.google.com/drive/u/1/folders/1JJwqWC6EleRNKuATofdjEKSIjEiy3iF5?fbclid=IwAR2u54f6pQVvyxwTa4wJeakeqZPQfrEdAxA058Zu_eAsTQAgKxoVucr99No)
 ## [Drive làm việc nhóm](https://drive.google.com/drive/folders/1BUWctrc0WJH_nWLLlUhdlkYShLVwuAOe?usp=sharing)
 
-# Week 3
+# Giai đoạn 4
+
+Toàn bộ code để trích xuất dữ liệu từ file tif, train model, sinh map nằm trong thư mục PythonCode
+1. genmap.py - Code chạy model và sinh map
+2. getPixels.py - Code lấy các pixel và các tham số trong ảnh địa hình (ảnh tif)
+3. get_split_data.py - Code chia data ra ở file data.csv ra 2 tập test và train
+4. LogisticRegression.py - Code thử nghiệm model LogisticRegression
+5. NaiveBayes.py - Code thử nghiệm model NaiveBayes
+6. RandomForestModel.py - Code thử nghiệm model RandomForestModel
+7. StandardizedCSV.py - Code thử nghiệm model StandardizedCSV
+
+Sau khi thử nghiệm, đã chọn ra các tham số phù hợp nhất cho từng model. 4 file tif ở trong thư mục MyGenmap là kết quả thu được cho từng model với tham số được chọn sau thử nghiệm.
+
+# Giai đoạn 3
 
 ### Những việc cần làm
 - Tải ảnh bản đồ lớp phủ, cắt theo shapefile của ĐBSH, tách ra các phân lớp (em Long)
@@ -60,7 +73,7 @@
 11. water: 150 (anh Long)
 12. aqua: 100 (Minh)
 
-# Week 2
+# Giai đoạn 2
 
 **[Video buổi họp tuần 2](https://drive.google.com/file/d/1JKutNBoCeaeKwpW9ne3T-aaO8tC5eBDG/view?usp=sharing)**
 
@@ -105,6 +118,6 @@ https://pcjericks.github.io/py-gdalogr-cookbook/raster_layers.html
 ### Xử lý ảnh:
 Các ảnh tải xuống từ GEE đang dùng hệ quy chiếu cầu, cần chuyển sang hệ quy chiếu UTM. Cái này không cần code, sử dụng tool Project Raster trong ArcMap là được.
 
-# Week 1
+# Giai đoạn 1
 - [Phân chia công việc tuần 1](https://docs.google.com/document/d/18LiRxJy1365zXZHxYvq2JjOhk1iDiqnwuc550IVhdoE/edit?usp=sharing)
 - [Báo cáo tuần 1](https://docs.google.com/document/d/1q4bj2tZiTIZd2wr4d2H6bYxeV17nWVYt/edit?usp=sharing&ouid=116186330127070054360&rtpof=true&sd=true)
