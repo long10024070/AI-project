@@ -2,6 +2,8 @@
 ## [Nội dung các tuần của thầy](https://drive.google.com/drive/u/1/folders/1JJwqWC6EleRNKuATofdjEKSIjEiy3iF5?fbclid=IwAR2u54f6pQVvyxwTa4wJeakeqZPQfrEdAxA058Zu_eAsTQAgKxoVucr99No)
 ## [Drive làm việc nhóm](https://drive.google.com/drive/folders/1BUWctrc0WJH_nWLLlUhdlkYShLVwuAOe?usp=sharing)
 
+# [Tổng kết](https://drive.google.com/drive/folders/10t-goNN38p1tZNrtlZxhHfrzxi3rE7k8?usp=sharing)
+
 # Giai đoạn 4
 
 Toàn bộ code để trích xuất dữ liệu từ file tif, train model, sinh map nằm trong thư mục PythonCode
