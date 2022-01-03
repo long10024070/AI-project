@@ -18,30 +18,30 @@ score = 'accuracy'
 # y_pred=svm.predict(X_test)
 # exit(0)
 
-### Find best paramenter
-from sklearn.svm import SVC
-from sklearn.model_selection import StratifiedKFold, GridSearchCV
-
-svm = SVC(C=0.025)
-skf = StratifiedKFold(n_splits=foldCV, shuffle=True, random_state=12)
-param_grid = {
-    'kernel': ['sigmoid', 'poly', 'rbf'],
-    'random_state': [10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120],
-    'C' : [0.01, 0.1, 1, 10],
-    'degree': [2,3,4],
-    'tol': [1e-3, 1e-4, 1e-2]
-}
-
-gridCV_clf = GridSearchCV(estimator = svm, param_grid=param_grid, cv = skf, scoring='accuracy', verbose=2)
-gridCV_clf.fit(X_train, y_train)
-print(gridCV_clf.best_params_)
-print(gridCV_clf.best_score_)
-
-# ###
+# ### Find best paramenter
 # from sklearn.svm import SVC
-# svm = SVC(max_features='auto', n_estimators=100, random_state=80, criterion='gini')
-# svm.fit(X_train,y_train)
-# y_pred=svm.predict(X_test)
-#
-# from sklearn.metrics import accuracy_score, confusion_matrix
-# print('Accuracy score - Test dataset: {}'.format(accuracy_score(y_test, y_pred)))
+# from sklearn.model_selection import StratifiedKFold, GridSearchCV
+
+# svm = SVC(C=0.025)
+# skf = StratifiedKFold(n_splits=foldCV, shuffle=True, random_state=12)
+# param_grid = {
+#     'kernel': ['sigmoid', 'poly', 'rbf'],
+#     'random_state': [10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120],
+#     'C' : [0.01, 0.1, 1, 10],
+#     'degree': [2,3,4],
+#     'tol': [1e-3, 1e-4, 1e-2]
+# }
+
+# gridCV_clf = GridSearchCV(estimator = svm, param_grid=param_grid, cv = skf, scoring='accuracy', verbose=2)
+# gridCV_clf.fit(X_train, y_train)
+# print(gridCV_clf.best_params_)
+# print(gridCV_clf.best_score_)
+
+###
+from sklearn.svm import SVC
+svm = SVC(C=1, degree=3, kernel='poly', random_state=10, tol=0.01)
+svm.fit(X_train,y_train)
+y_pred=svm.predict(X_test)
+
+from sklearn.metrics import accuracy_score, confusion_matrix
+print('Accuracy score - Test dataset: {}'.format(accuracy_score(y_test, y_pred)))
